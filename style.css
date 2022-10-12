@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* setting the box size and font family of the text */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+/* setting the height and font-faily of body*/
+body {
+  font-family: "Open Sans", sans-sarif;
+  height: 100vh;
+}
+/* setting the dimensions of the slider-container*/
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+/* setting the dimensions of the left slide*/
+
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* setting the dimensions of the divs in left slide*/
+.left-slide div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+/* styling the h1 in left slides*/
+.left-slide h1 {
+  font-size: 40px;
+  margin-top: -60px;
+  margin-bottom: 15px;
+  color: black;
+  text-align: left;
+}
+/* styling the paragraphs in left slides*/
+.left-slide p {
+  font-size: 21px;
+  margin: 5px;
+  padding: 5px;
+  overflow-wrap: break-word;
+  color: lavenderblush;
+  text-align: center;
+}
+
+/* styling the resume button*/
+
+.resume {
+  background-color: aliceblue;
+  color: navy;
+  font-size: 25px bold;
+  border: 2px solid navy;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  /*text-align: right;
+  margin-left: 30px;
+  margin-bottom: -50px;*/
+}
+
+/*setting the dimensions of the right slides*/
+
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+}
+
+/* styling the divs in right slides*/
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+/* styling the main buttons of the slider*/
+button {
+  background-color: aliceblue;
+  border: none;
+  color: darkgreen;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+/* setting dimensions of my picture*/
+.img {
+  margin: 10px;
+  padding: 10px;
+  height: 800px;
+  width: 800px;
+}
+
+/* setting the position of the main slider buttons
+.action-buttons{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;*/
+
+/* setting the hover effect on the button*/
+button:hover {
+  color: #222;
+}
+/* setting the ouline of the button*/
+button:focus {
+  outline-color: darkgreen;
+}
+/* setting the positions of the main slider buttons*/
+
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+/* setting the position of the down button on the page*/
+
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* setting the position of the up button on the page*/
+
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
