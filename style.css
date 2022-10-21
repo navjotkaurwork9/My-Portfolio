@@ -103,8 +103,8 @@ button {
 .img {
   margin: 10px;
   padding: 10px;
-  height: 800px;
-  width: 800px;
+  height: 100%;
+  width: 100%;
 }
 
 /* setting the position of the main slider buttons
